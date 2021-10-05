@@ -55,7 +55,6 @@ export default {
 	}
 }
 
-// export { default as BButton } from './components/Button/BButton.vue'
 export { default as BAccordion } from '@/components/Accordion/BAccordion.vue'
 export { default as BBadge } from '@/components/Badge/BBadge.vue'
 export { default as BButton } from '@/components/Button/BButton.vue'

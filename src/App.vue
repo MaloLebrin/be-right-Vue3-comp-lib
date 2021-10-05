@@ -3,16 +3,16 @@
     alt="Vue logo"
     src="./assets/logo.png"
   >
-  <BButton>tests</BButton>
+  <BAccordion title="test">tests</BAccordion>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import BButton from './components/Button/BButton.vue'
+import BAccordion from './components/Accordion/BAccordion.vue'
 export default defineComponent({
   name: 'App',
   components: {
-    BButton,
+    BAccordion,
   }
 })
 </script>

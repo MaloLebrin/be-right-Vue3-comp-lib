@@ -1,15 +1,27 @@
 {
   "name": "be-right-vue3-lib",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.5",
+  "private": false,
+  "main": "./dist/be-right-vue3-lib.umd.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "*.json",
+    "*.js",
+    "*ts"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name be-right-vue3-lib src/index.ts",
     "test:unit": "vue-cli-service test:unit",
+    "prepublishOnly": "npm run build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "autoprefixer": "^9.8.8",
     "core-js": "^3.6.5",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16",
     "vue": "^3.0.0"
   },
   "devDependencies": {
@@ -41,7 +53,6 @@
     },
     "extends": [
       "plugin:vue/vue3-essential",
-      "@vue/standard",
       "@vue/typescript/recommended"
     ],
     "parserOptions": {

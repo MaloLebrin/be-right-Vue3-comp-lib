@@ -1,16 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <img
+    alt="Vue logo"
+    src="./assets/logo.png"
+  >
+  <BButton>tests</BButton>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
-
+import BButton from './components/Button/BButton.vue'
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    BButton,
   }
 })
 </script>

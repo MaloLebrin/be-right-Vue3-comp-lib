@@ -4,10 +4,10 @@
       v-bind="$attrs"
       :disabled="disabled"
       :aria-disabled="disabled"
-      :value="value"
+      :modelValue="value"
       :type="type"
       :class="classes"
-      @input="onInput($event.target.value)"
+      @input="$emit('update:modelValue', $event.target.value)"
     >
   </div>
 </template>
@@ -40,18 +40,13 @@ export default defineComponent({
     }
   },
   emits: [DOM_EVENTS_ENUM.INPUT],
-  setup(_, { emit }) {
+  setup() {
     const fieldStatus = inject(FIELD_STATUS_INJECTION_KEY, computed(() => InputStatusesEnum.DEFAULT))
 
     const classes = computed(() => InputStatusesClassesMap[fieldStatus.value])
 
-    function onInput(value: string) {
-      emit(DOM_EVENTS_ENUM.INPUT, value)
-    }
-
     return {
       classes,
-      onInput
     }
   }
 })

@@ -61,11 +61,11 @@ export const ButtonVariantsMap: ButtonVariantsMap = {
 }
 
 export const ButtonDisabledClassesMap: ButtonVariantsMap = {
-	primary: 'bg-blue/50 text-white',
-	warning: 'bg-orange/50 text-white',
-	danger: 'bg-red/50 text-white',
-	success: 'bg-green/50 text-white',
-	promotion: 'bg-purple/50 text-white'
+	primary: 'bg-blue-light text-black cursor-not-allowed',
+	warning: 'bg-orange-light text-black cursor-not-allowed',
+	danger: 'bg-red-light text-black cursor-not-allowed',
+	success: 'bg-green-light text-black cursor-not-allowed',
+	promotion: 'bg-purple-light text-black cursor-not-allowed'
 }
 
 export const ButtonOutlinedClassesMap: ButtonVariantsMap = {

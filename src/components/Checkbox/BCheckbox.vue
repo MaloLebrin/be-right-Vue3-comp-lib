@@ -4,9 +4,9 @@
       :class="classes"
       v-bind="$attrs"
       type="checkbox"
-      :checked="value"
+      :checked="checked"
       :disabled="disabled"
-      @input="(event) => $emit('input', event.target.checked)"
+      @input="(event) => $emit('update:checked', event.target.checked)"
     />
     <label class="flex flex-row items-center font-bold cursor-pointer text">
       {{ label }}
@@ -30,7 +30,7 @@ export default defineComponent({
       default: CheckboxVariantsEnum.PRIMARY,
       validator: (prop: CheckboxVariantsEnum) => CheckboxVariantsArray.includes(prop)
     },
-    value: {
+    checked: {
       type: Boolean,
       required: false,
     },

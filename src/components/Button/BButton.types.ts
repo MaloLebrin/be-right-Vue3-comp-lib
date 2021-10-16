@@ -5,6 +5,7 @@ export enum ButtonVariantsEnum {
 	'DANGER' = 'danger',
 	'SUCCESS' = 'success',
 	'PROMOTION' = 'promotion',
+	'WHITE' = 'white',
 }
 export const ButtonVariantsArray = Object.values(ButtonVariantsEnum).map(variant => variant)
 
@@ -45,7 +46,7 @@ export type ButtonSizesMap = {
 	[key in ButtonSizesEnum]: string
 }
 
-const commonClasses = 'uppercase rounded cursor-pointer disabled:cursor-not-allowed'
+const commonClasses = 'uppercase rounded-2xl cursor-pointer disabled:cursor-not-allowed'
 
 export const ButtonSizesMap: ButtonSizesMap = {
 	default: `title-3 px-6 py-3 ${commonClasses}`,
@@ -57,7 +58,8 @@ export const ButtonVariantsMap: ButtonVariantsMap = {
 	warning: 'bg-orange text-white hover:bg-orange-dark focus:ring-4 ring-orange',
 	danger: 'bg-red text-black hover:text-white hover:bg-red-light focus:ring-4 ring-red',
 	success: 'bg-green text-white hover:bg-green-dark focus:ring-4 ring-green',
-	promotion: 'bg-purple text-white hover:text-white hover:bg-purple-dark focus:ring-4 ring-purple'
+	promotion: 'bg-purple text-white hover:text-white hover:bg-purple-dark focus:ring-4 ring-purple',
+	white: 'bg-white text-white hover:text-white hover:bg-white-dark focus:ring-4 ring-white',
 }
 
 export const ButtonDisabledClassesMap: ButtonVariantsMap = {
@@ -65,7 +67,8 @@ export const ButtonDisabledClassesMap: ButtonVariantsMap = {
 	warning: 'bg-orange-light text-black cursor-not-allowed',
 	danger: 'bg-red-light text-black cursor-not-allowed',
 	success: 'bg-green-light text-black cursor-not-allowed',
-	promotion: 'bg-purple-light text-black cursor-not-allowed'
+	promotion: 'bg-purple-light text-black cursor-not-allowed',
+	white: 'bg-white text-black cursor-not-allowed',
 }
 
 export const ButtonOutlinedClassesMap: ButtonVariantsMap = {
@@ -73,7 +76,8 @@ export const ButtonOutlinedClassesMap: ButtonVariantsMap = {
 	warning: 'bg-white text-orange border border-orange hover:border-orange-dark hover:text-orange-dark focus:ring-4 ring-orange',
 	danger: 'bg-white text-red border border-red hover:border-red-light hover:text-red-light focus:ring-4 ring-red',
 	success: 'bg-white text-green border border-green hover:border-green-dark hover:text-green-dark focus:ring-4 ring-green',
-	promotion: 'bg-white text-purple border border-purple hover:border-purple-dark hover:text-purple-dark focus:ring-4 ring-purple'
+	promotion: 'bg-white text-purple border border-purple hover:border-purple-dark hover:text-purple-dark focus:ring-4 ring-purple',
+	white: 'bg-white text-purple border border-none hover:border-black hover:text-purple-dark focus:ring-4',
 }
 
 export const ButtonOutlinedAndDisabledClassesMap: ButtonVariantsMap = {
@@ -81,5 +85,6 @@ export const ButtonOutlinedAndDisabledClassesMap: ButtonVariantsMap = {
 	warning: 'bg-white text-orange/50 border border-orange/50',
 	danger: 'bg-white text-red/50 border border-red/50',
 	success: 'bg-white text-green/50 border border-green/50',
-	promotion: 'bg-white text-purple/50 border border-purple/50'
+	promotion: 'bg-white text-purple/50 border border-purple/50',
+	white: 'bg-white text-black/50 border border-black/50'
 }

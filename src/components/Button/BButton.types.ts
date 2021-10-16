@@ -59,7 +59,7 @@ export const ButtonVariantsMap: ButtonVariantsMap = {
 	danger: 'bg-red text-black hover:text-white hover:bg-red-light focus:ring-4 ring-red',
 	success: 'bg-green text-white hover:bg-green-dark focus:ring-4 ring-green',
 	promotion: 'bg-purple text-white hover:text-white hover:bg-purple-dark focus:ring-4 ring-purple',
-	white: 'bg-white text-white hover:text-white hover:bg-white-dark focus:ring-4 ring-white',
+	white: 'bg-white text-black hover:text-black hover:bg-white-dark focus:ring-4 ring-white',
 }
 
 export const ButtonDisabledClassesMap: ButtonVariantsMap = {

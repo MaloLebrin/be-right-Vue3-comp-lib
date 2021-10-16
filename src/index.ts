@@ -1,6 +1,7 @@
 import BAccordion from '@/components/Accordion/BAccordion.vue'
 import BBadge from '@/components/Badge/BBadge.vue'
 import BButton from '@/components/Button/BButton.vue'
+import BCard from '@/components/Card/BCard.vue'
 import BCardModal from '@/components/CardModal/BCardModal.vue'
 import BCheckbox from '@/components/Checkbox/BCheckbox.vue'
 import BDropdown from '@/components/Dropdown/BDropdown.vue'
@@ -26,6 +27,7 @@ const Components = {
 	BAccordion,
 	BBadge,
 	BButton,
+	BCard,
 	BCardModal,
 	BCheckbox,
 	BDropdown,
@@ -58,6 +60,7 @@ export default {
 export { default as BAccordion } from '@/components/Accordion/BAccordion.vue'
 export { default as BBadge } from '@/components/Badge/BBadge.vue'
 export { default as BButton } from '@/components/Button/BButton.vue'
+export { default as BCard } from '@/components/Card/BCard.vue'
 export { default as BCardModal } from '@/components/CardModal/BCardModal.vue'
 export { default as BCheckbox } from '@/components/Checkbox/BCheckbox.vue'
 export { default as BDropdown } from '@/components/Dropdown/BDropdown.vue'

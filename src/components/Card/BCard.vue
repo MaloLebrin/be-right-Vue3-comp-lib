@@ -11,7 +11,7 @@ import { computed, defineComponent, PropType } from 'vue'
 import { CardVariantsEnum, CardVariantsMap } from './BCard.types'
 
 export default defineComponent({
-  name: 'BCardModal',
+  name: 'BCard',
   props: {
     variant: {
       type: String as PropType<CardVariantsEnum>,

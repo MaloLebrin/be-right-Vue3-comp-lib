@@ -3,12 +3,19 @@
     :is="tag"
     v-bind="$attrs"
     :type="type"
-    :class="[colorClasses, sizeClasses]"
+    :class="[
+      colorClasses,
+      sizeClasses,
+      {'flex items-center': isLoading}
+    ]"
     @click="onClick($event)"
     :disabled="disabled"
     :aria-disabled="disabled"
   >
     <slot />
+    <template v-if="isLoading">
+      <div :class="loaderClasses" />
+    </template>
   </component>
 </template>
 
@@ -31,7 +38,8 @@ import {
   ButtonTagsEnum,
   ButtonTagsArray,
   ButtonOutlinedAndDisabledClassesMap,
-  ButtonSizesMap
+  ButtonSizesMap,
+  ButtonLoaderClassesMap
 } from './BButton.types'
 
 export default defineComponent({
@@ -87,7 +95,11 @@ export default defineComponent({
     outlined: {
       type: Boolean,
       default: false
-    }
+    },
+    isLoading: {
+      type: Boolean,
+      default: false,
+    },
   },
   emits: [DOM_EVENTS_ENUM.CLICK],
   setup(props, { emit }) {
@@ -108,8 +120,11 @@ export default defineComponent({
       emit(DOM_EVENTS_ENUM.CLICK, event)
     }
 
+    const loaderClasses = computed(() => ButtonLoaderClassesMap[props.variant])
+
     return {
       colorClasses,
+      loaderClasses,
       sizeClasses,
       onClick
     }

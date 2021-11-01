@@ -88,3 +88,12 @@ export const ButtonOutlinedAndDisabledClassesMap: ButtonVariantsMap = {
 	promotion: 'bg-white text-purple/50 border border-purple/50',
 	white: 'bg-white text-black/50 border border-black/50'
 }
+
+export const ButtonLoaderClassesMap: ButtonVariantsMap = {
+	primary: 'ml-2 animate-spin rounded-full h-6 w-6 border-b-2 border-t-2 border-white',
+	danger: 'ml-2 animate-spin rounded-full h-6 w-6 border-b-2 border-t-2 border-white',
+	success: 'ml-2 animate-spin rounded-full h-6 w-6 border-b-2 border-t-2 border-blue',
+	warning: 'ml-2 animate-spin rounded-full h-6 w-6 border-b-2 border-t-2 border-grey-400',
+	promotion: 'ml-2 animate-spin rounded-full h-6 w-6 border-b-2 border-t-2 border-white',
+	white: 'ml-2 animate-spin rounded-full h-6 w-6 border-b-2 border-t-2 border-blue'
+}

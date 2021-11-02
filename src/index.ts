@@ -8,6 +8,7 @@ import BDropdown from '@/components/Dropdown/BDropdown.vue'
 import BField from '@/components/Field/BField.vue'
 import BFileInput from '@/components/FileInput/BFileInput.vue'
 import BInput from '@/components/Input/BInput.vue'
+import BLoader from '@/components/Loader/BLoader.vue'
 import BLink from '@/components/Link/BLink.vue'
 import BMessage from '@/components/Message/BMessage.vue'
 import BNumberInput from '@/components/NumberInput/BNumberInput.vue'
@@ -35,6 +36,7 @@ const Components = {
 	BFileInput,
 	BInput,
 	BLink,
+	BLoader,
 	BMessage,
 	BNumberInput,
 	BRadio,
@@ -68,6 +70,7 @@ export { default as BField } from '@/components/Field/BField.vue'
 export { default as BFileInput } from '@/components/FileInput/BFileInput.vue'
 export { default as BInput } from '@/components/Input/BInput.vue'
 export { default as BLink } from '@/components/Link/BLink.vue'
+export { default as BLoader } from '@/components/Loader/BLoader.vue'
 export { default as BMessage } from '@/components/Message/BMessage.vue'
 export { default as BNumberInput } from '@/components/NumberInput/BNumberInput.vue'
 export { default as BRadio } from '@/components/Radio/BRadio.vue'

@@ -1,18 +1,32 @@
 <template>
-  <img
-    alt="Vue logo"
-    src="./assets/logo.png"
-  >
-  <BAccordion title="test">tests</BAccordion>
+  <BLoader
+    :isLoading="true"
+    class="absolute top-0 right-0 left-0 bottom-0"
+  />
+
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import BAccordion from './components/Accordion/BAccordion.vue'
+import { defineComponent, reactive, toRefs, ref } from 'vue'
+import BLoader from '@/components/Loader/BLoader.vue'
+
 export default defineComponent({
   name: 'App',
   components: {
-    BAccordion,
+    BLoader,
+  },
+  setup() {
+    const form = reactive({
+      email: null,
+      password: 'null',
+    })
+
+    const test = ref(false)
+
+    return {
+      ...toRefs(form),
+      test
+    }
   }
 })
 </script>
@@ -25,5 +39,6 @@ export default defineComponent({
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  height: 100vh;
 }
 </style>

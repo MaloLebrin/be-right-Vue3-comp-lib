@@ -16,7 +16,7 @@
 import { computed, defineComponent, inject, PropType } from 'vue'
 import { InputTypesEnum, InputTypes, InputTypesArray, InputStatusesClassesMap, InputStatusesEnum } from './BInput.types'
 import { FIELD_STATUS_INJECTION_KEY } from './../Field/BField.types'
-import { DOM_EVENTS_ENUM } from '../../utils'
+import { DOM_EVENTS_ENUM } from '@/utils'
 /**
  * Form Input with automatic validation (when used with BField).
  */

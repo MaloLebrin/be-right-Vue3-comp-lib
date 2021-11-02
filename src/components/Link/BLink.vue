@@ -22,10 +22,10 @@ import {
   LinkTagsEnum,
   LinkTagsArray
 } from './BLink.types'
-import { DOM_EVENTS_ENUM } from '../../utils'
+import { DOM_EVENTS_ENUM } from '@/utils'
 
 export default defineComponent({
-  name: 'TRLink',
+  name: 'BLink',
   props: {
     /**
      * The variant of the Link.

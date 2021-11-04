@@ -1,20 +1,22 @@
 <template>
   <BLoader
-    :isLoading="true"
+    :isLoading="false"
     type="spinner"
     class="absolute top-0 right-0 left-0 bottom-0"
   />
+  <BInput placeholder="router-link" />
 
 </template>
 
 <script lang="ts">
 import { defineComponent, reactive, toRefs, ref } from 'vue'
 import BLoader from '@/components/Loader/BLoader.vue'
-
+import BInput from '@/components/Input/BInput.vue'
 export default defineComponent({
   name: 'App',
   components: {
     BLoader,
+    BInput,
   },
   setup() {
     const form = reactive({

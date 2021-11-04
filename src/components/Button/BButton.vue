@@ -6,7 +6,7 @@
     :class="[
       colorClasses,
       sizeClasses,
-      {'flex items-center': isLoading}
+      {'flex items-center cursor-wait': isLoading}
     ]"
     @click="onClick($event)"
     :disabled="disabled"

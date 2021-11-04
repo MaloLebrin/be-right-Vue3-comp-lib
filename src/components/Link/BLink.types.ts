@@ -24,7 +24,7 @@ export enum LinkTagsEnum {
 export type LinkTags = `${LinkTagsEnum}`
 export const LinkTagsArray = Object.values(LinkTagsEnum).map(variant => variant)
 
-const commonClasses = 'underline cursor-pointer disabled:cursor-not-allowed'
+const commonClasses = 'cursor-pointer disabled:cursor-not-allowed'
 
 export const LinkVariantsMap: LinkVariantsMap = {
 	primary: `${commonClasses} text-blue hover:text-blue-dark focus:ring-4 ring-blue`,

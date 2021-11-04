@@ -4,6 +4,8 @@
       v-bind="$attrs"
       :disabled="disabled"
       :aria-disabled="disabled"
+      :placeholder="placeholder"
+      :aria-placeholder="placeholder"
       :modelValue="value"
       :type="type"
       :class="classes"
@@ -37,7 +39,11 @@ export default defineComponent({
       type: Boolean,
       required: false,
       default: false
-    }
+    },
+    placeholder: {
+      type: String,
+      required: false,
+    },
   },
   emits: [DOM_EVENTS_ENUM.INPUT],
   setup() {

@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center">
-    <div class="relative inline-block w-12 mr-2 align-middle select-none transition duration-700 ease-in">
+    <div class="relative inline-block w-12 mr-2 align-middle select-none transition transform duration-300 ease-in-out">
       <input
         :value="updatedValue"
         type="checkbox"

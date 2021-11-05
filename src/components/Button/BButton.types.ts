@@ -46,20 +46,20 @@ export type ButtonSizesMap = {
 	[key in ButtonSizesEnum]: string
 }
 
-const commonClasses = 'uppercase rounded-2xl cursor-pointer disabled:cursor-not-allowed'
+const commonClasses = 'font-bold text-sm rounded-full shadow-lg focus:outline-none focus:shadow-outline cursor-pointer disabled:cursor-not-allowed transform transition hover:-translate-y-1 hover:scale-105 duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2'
 
 export const ButtonSizesMap: ButtonSizesMap = {
 	default: `title-3 px-6 py-3 ${commonClasses}`,
-	small: `title-4 px-4 py-2 ${commonClasses}`
+	small: `px-4 py-2 ${commonClasses}`
 }
 
 export const ButtonVariantsMap: ButtonVariantsMap = {
-	primary: 'bg-blue text-white font-normal hover:bg-blue-dark focus:ring-4 ring-blue',
-	warning: 'bg-orange text-white hover:bg-orange-dark focus:ring-4 ring-orange',
-	danger: 'bg-red text-black hover:text-white hover:bg-red-light focus:ring-4 ring-red',
-	success: 'bg-green text-white hover:bg-green-dark focus:ring-4 ring-green',
-	promotion: 'bg-purple text-white hover:text-white hover:bg-purple-dark focus:ring-4 ring-purple',
-	white: 'bg-white text-black hover:text-black hover:bg-white-dark focus:ring-4 ring-white',
+	primary: 'bg-blue text-white font-normal hover:bg-blue-dark dark:bg-white dark:text-white focus:ring-blue dark:focus:ring-white',
+	warning: 'bg-orange text-white hover:bg-orange-dark focus:ring-orange dark:focus:ring-orange',
+	danger: 'bg-red text-white hover:text-white hover:bg-red-light focus:ring-red-light',
+	success: 'bg-green text-white hover:bg-green-dark focus:ring-green',
+	promotion: 'bg-purple text-white hover:text-white hover:bg-purple-dark focus:ring-purple dark:focus:ring-white',
+	white: 'bg-white text-black hover:text-black hover:bg-white-dark focus:ring-black dark:focus:ring-white',
 }
 
 export const ButtonDisabledClassesMap: ButtonVariantsMap = {
@@ -72,12 +72,12 @@ export const ButtonDisabledClassesMap: ButtonVariantsMap = {
 }
 
 export const ButtonOutlinedClassesMap: ButtonVariantsMap = {
-	primary: 'bg-white text-blue border border-blue hover:border-blue-dark hover:text-blue-dark focus:ring-4 ring-blue',
-	warning: 'bg-white text-orange border border-orange hover:border-orange-dark hover:text-orange-dark focus:ring-4 ring-orange',
-	danger: 'bg-white text-red border border-red hover:border-red-light hover:text-red-light focus:ring-4 ring-red',
-	success: 'bg-white text-green border border-green hover:border-green-dark hover:text-green-dark focus:ring-4 ring-green',
-	promotion: 'bg-white text-purple border border-purple hover:border-purple-dark hover:text-purple-dark focus:ring-4 ring-purple',
-	white: 'bg-white text-purple border border-none hover:border-black hover:text-purple-dark focus:ring-4',
+	primary: 'bg-white text-blue border border-blue hover:border-blue-dark hover:text-blue-dark',
+	warning: 'bg-white text-orange border border-orange hover:border-orange-dark hover:text-orange-dark',
+	danger: 'bg-white text-red border border-red hover:border-red-light hover:text-red-light',
+	success: 'bg-white text-green border border-green hover:border-green-dark hover:text-green-dark',
+	promotion: 'bg-white text-purple border border-purple hover:border-purple-dark hover:text-purple-dark',
+	white: 'bg-white text-purple border border-none hover:border-black hover:text-purple-dark',
 }
 
 export const ButtonOutlinedAndDisabledClassesMap: ButtonVariantsMap = {

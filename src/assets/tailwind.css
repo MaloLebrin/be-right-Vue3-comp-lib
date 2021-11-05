@@ -11,3 +11,7 @@
 .has-tooltip:hover .tooltip {
   @apply visible z-50
 }
+
+.DarkModeAnimation {
+	@apply transform ease-in-out duration-500 transition-colors
+}

@@ -1,11 +1,14 @@
 <template>
   <div
     :class="classes"
-    class="border-2 p-2 rounded mt-2"
+    class="border-2 p-2 rounded-t-lg rounded-b-lg mt-2"
   >
-    <button @click="click">{{ title }}</button>
+    <div @click="click">
+      <slot name="title" />
+
+    </div>
     <div
-      class="mt-4 border-2 p-2 rounded"
+      class="mt-4 p-2 rounded"
       :class="isAccordionOpen ? 'd-block' : 'hidden'"
     >
       <slot />

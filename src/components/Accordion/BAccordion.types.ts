@@ -12,8 +12,8 @@ export type AccordionVariantsMap = {
 }
 
 export const AccordionVariantsMap: AccordionVariantsMap = {
-	primary: `bg-white text-dark hover:bg-blue-dark rounded cursor-pointer`,
-	warning: `bg-orange text-white hover:bg-orange-dark rounded cursor-pointer`,
-	danger: `bg-red text-white hover:bg-red-dark rounded cursor-pointer`,
-	success: `bg-green text-white hover:bg-green-dark rounded cursor-pointer`,
+	primary: `bg-white text-dark rounded cursor-pointer`,
+	warning: `bg-orange text-white rounded cursor-pointer`,
+	danger: `bg-red text-white rounded cursor-pointer`,
+	success: `bg-green text-white rounded cursor-pointer`,
 }

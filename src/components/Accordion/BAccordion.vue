@@ -3,7 +3,10 @@
     :class="classes"
     class="border-2 p-2 rounded-t-lg rounded-b-lg mt-2"
   >
-    <div @click="click">
+    <div
+      class="w-full h-full"
+      @click="click"
+    >
       <slot name="title" />
 
     </div>

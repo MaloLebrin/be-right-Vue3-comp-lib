@@ -1,18 +1,20 @@
 <template>
   <div
     :class="classes"
-    class="border-2 p-2 rounded-t-lg rounded-b-lg mt-2"
+    class="border-2 rounded-t-lg rounded-b-lg mt-2 z-20"
   >
     <div
-      class="w-full h-full"
+      class="w-full h-full z-20"
       @click="click"
     >
       <slot name="title" />
 
     </div>
     <div
-      class="mt-4 p-2 rounded"
-      :class="isAccordionOpen ? 'd-block' : 'hidden'"
+      class="rounded transform ease-in-out duration-700 transition-all z-0 h-full relative overflow-hidden text-left"
+      :class="isAccordionOpen ? 'opacity-1' : 'opacity-0'"
+      ref="contentAccordion"
+      :style="isAccordionOpen ? openClasses : 'max-height: 0'"
     >
       <slot />
     </div>
@@ -44,6 +46,8 @@ export default defineComponent({
   setup(props, { emit }) {
     const classes = computed(() => AccordionVariantsMap[props.variant])
     const isAccordionOpen = ref(props.isOpen)
+    const contentAccordion = ref<null | HTMLElement>(null)
+    const openClasses = computed(() => contentAccordion.value ? `max-height: ${contentAccordion.value.scrollHeight}px` : 'hidden')
 
     function click() {
       isAccordionOpen.value = !isAccordionOpen.value
@@ -53,6 +57,8 @@ export default defineComponent({
       isAccordionOpen,
       click,
       classes,
+      contentAccordion,
+      openClasses,
     }
   }
 })

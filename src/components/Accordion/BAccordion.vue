@@ -11,7 +11,7 @@
 
     </div>
     <div
-      class="rounded transform ease-in-out duration-700 transition-all z-0 h-full relative overflow-hidden"
+      class="rounded transform ease-in-out duration-700 transition-all z-0 h-full relative overflow-hidden w-full"
       :class="isAccordionOpen ? 'opacity-1' : 'opacity-0'"
       ref="contentAccordion"
       :style="isAccordionOpen ? openClasses : 'max-height: 0'"

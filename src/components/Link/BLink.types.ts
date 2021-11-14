@@ -4,7 +4,8 @@ export enum LinkVariantsEnum {
 	'WARNING' = 'warning',
 	'DANGER' = 'danger',
 	'SUCCESS' = 'success',
-	'PROMOTION' = 'promotion',
+	'PURPLE' = 'purple',
+	"WHITE" = 'white',
 }
 export const LinkVariantsArray = Object.values(LinkVariantsEnum).map(variant => variant)
 
@@ -31,7 +32,8 @@ export const LinkVariantsMap: LinkVariantsMap = {
 	warning: `${commonClasses} text-orange hover:text-orange-dark focus:ring-4 ring-orange`,
 	danger: `${commonClasses} text-red hover:text-red-dark focus:ring-4 ring-red`,
 	success: `${commonClasses} text-green hover:text-green-dark focus:ring-4 ring-green`,
-	promotion: `${commonClasses} text-purple hover:text-purple-dark focus:ring-4 ring-purple`
+	purple: `${commonClasses} text-purple hover:text-purple-dark focus:ring-4 ring-purple`,
+	white: `${commonClasses} text-white hover:text-white-dark focus:ring-4 ring-white`,
 }
 
 export const LinkDisabledClassesMap: LinkVariantsMap = {
@@ -39,5 +41,6 @@ export const LinkDisabledClassesMap: LinkVariantsMap = {
 	warning: `${commonClasses} text-orange/50`,
 	danger: `${commonClasses} text-red/50`,
 	success: `${commonClasses} text-green/50`,
-	promotion: `${commonClasses} text-purple/50`
+	purple: `${commonClasses} text-purple/50`,
+	white: `${commonClasses} text-white/50`,
 }

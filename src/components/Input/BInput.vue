@@ -6,7 +6,7 @@
       :aria-disabled="disabled"
       :placeholder="placeholder"
       :aria-placeholder="placeholder"
-      :modelValue="value"
+      :value="modelValue"
       :type="type"
       :class="classes"
       @input="$emit('update:modelValue', $event.target.value)"
@@ -25,7 +25,7 @@ import { DOM_EVENTS_ENUM } from '@/utils'
 export default defineComponent({
   name: 'BInput',
   props: {
-    value: {
+    modelValue: {
       type: String,
       default: ''
     },

@@ -24,7 +24,7 @@ export type InputStatusesClassesMap = {
 	[key in InputStatusesEnum]: string
 }
 
-const commonClasses = 'p-3 border rounded text-black disabled:border-grey disabled:bg-grey-light focus:outline-none text-black dark:text-white'
+const commonClasses = 'w-full p-3 border rounded text-black disabled:border-grey disabled:bg-grey-light focus:outline-none text-black dark:text-white'
 
 export const InputStatusesClassesMap: InputStatusesClassesMap = {
 	default: `${commonClasses} border-blue hover:border-blue-dark focus:ring-2 ring-blue`,

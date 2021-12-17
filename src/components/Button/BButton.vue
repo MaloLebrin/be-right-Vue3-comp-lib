@@ -6,7 +6,8 @@
     :class="[
       colorClasses,
       sizeClasses,
-      {'flex items-center cursor-wait': isLoading}
+      {'flex items-center cursor-wait': isLoading},
+      {'cursor-not-allowed opacity-70': disabled }
     ]"
     @click="onClick($event)"
     :disabled="disabled"

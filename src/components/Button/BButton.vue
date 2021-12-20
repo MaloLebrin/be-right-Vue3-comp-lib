@@ -7,7 +7,8 @@
       colorClasses,
       sizeClasses,
       {'flex items-center cursor-wait': isLoading},
-      {'opacity-70': disabled }
+      {'opacity-70': disabled },
+      { 'cursor-pointer': !disabled }
     ]"
     @click="onClick($event)"
     :disabled="disabled"
@@ -127,7 +128,7 @@ export default defineComponent({
       colorClasses,
       loaderClasses,
       sizeClasses,
-      onClick
+      onClick,
     }
   }
 })

@@ -46,7 +46,7 @@ export type ButtonSizesMap = {
 	[key in ButtonSizesEnum]: string
 }
 
-const commonClasses = 'font-bold text-sm rounded-full shadow-lg focus:outline-none focus:shadow-outline cursor-pointer disabled:cursor-not-allowed transform transition hover:-translate-y-1 hover:scale-105 duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2'
+const commonClasses = 'font-bold text-sm rounded-full shadow-lg focus:outline-none focus:shadow-outline disabled:cursor-not-allowed transform transition hover:-translate-y-1 hover:scale-105 duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2'
 
 export const ButtonSizesMap: ButtonSizesMap = {
 	default: `title-3 px-6 py-3 ${commonClasses}`,

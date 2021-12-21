@@ -2,7 +2,7 @@
   <div :class="[classes, 'relative']">
     <div
       v-if="isCloseable"
-      class="bg-white border-2 border-black-light text-black absolute top-1 right-1 rounded-full cursor-pointer"
+      class="absolute -top-1.5 -right-1.5 bg-white border-2 border-black-light text-black rounded-full cursor-pointer"
       @click="onClose"
     >
       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"

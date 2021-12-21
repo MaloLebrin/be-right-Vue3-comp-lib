@@ -13,7 +13,7 @@ export type TagVariantsMap = {
 	[key in TagVariantsEnum]: string
 }
 
-const commonClasses = 'p-4 rounded'
+const commonClasses = 'rounded flex items-center justify-center px-4 py-2'
 
 export const TagsVariantsMap: TagVariantsMap = {
 	primary: `${commonClasses} bg-blue text-white hover:bg-blue-dark`,

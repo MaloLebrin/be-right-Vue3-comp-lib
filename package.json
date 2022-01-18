@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "dev": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name be-right-vue3-lib src/index.ts",
+    "build": "yarn && vue-cli-service build --target lib --name be-right-vue3-lib src/index.ts",
     "test:unit": "vue-cli-service test:unit",
     "prepublishOnly": "npm run build",
     "lint": "vue-cli-service lint"

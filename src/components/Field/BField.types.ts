@@ -1,10 +1,10 @@
 export const FIELD_STATUS_INJECTION_KEY = 'fieldStatus'
 
 export enum FieldStatusesEnum {
-	WARNING = 'warning',
-	ERROR = 'error',
-	SUCCESS = 'success',
-	DEFAULT = 'default'
+  WARNING = 'warning',
+  ERROR = 'error',
+  SUCCESS = 'success',
+  DEFAULT = 'default'
 }
 
 export type FieldStatusesTypes = `${FieldStatusesEnum}`
@@ -12,7 +12,7 @@ export type FieldStatusesTypes = `${FieldStatusesEnum}`
 export const FieldStatusesArray = Object.values(FieldStatusesEnum).map(status => status)
 
 export type FieldStatusesClassesMap = {
-	[key in FieldStatusesEnum]: string
+  [key in FieldStatusesEnum]: string
 }
 
 const commonClasses = 'mt-1'
@@ -20,15 +20,15 @@ const commonClasses = 'mt-1'
 const commonLabelClasses = 'block mb-2 text-lg font-bold'
 
 export const FieldMessageStatusesClassesMap: FieldStatusesClassesMap = {
-	default: `${commonClasses} text-blue`,
-	error: `${commonClasses} text-red`,
-	success: `${commonClasses} text-green`,
-	warning: `${commonClasses} text-orange`
+  default: `${commonClasses} text-blue dark:text-white`,
+  error: `${commonClasses} text-red`,
+  success: `${commonClasses} text-green`,
+  warning: `${commonClasses} text-orange`
 }
 
 export const LabelStatusClassesMap: FieldStatusesClassesMap = {
-	default: `${commonLabelClasses} text-blue`,
-	error: `${commonLabelClasses} text-red`,
-	success: `${commonLabelClasses} text-green`,
-	warning: `${commonLabelClasses} text-orange`
+  default: `${commonLabelClasses} text-blue dark:text-white`,
+  error: `${commonLabelClasses} text-red`,
+  success: `${commonLabelClasses} text-green`,
+  warning: `${commonLabelClasses} text-orange`
 }

@@ -1,4 +1,5 @@
 <template>
+<div class="absolute inset-0">
   <div
     v-if="isActive"
     class="Toast px-6 py-4 border-0 rounded relative mb-4"
@@ -8,12 +9,13 @@
       <slot />
     </span>
     <button
-      class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none"
+      class="absolute bg-white rounded-full text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none"
       @click="closeAlert()"
     >
       <span>×</span>
     </button>
   </div>
+</div>
 </template>
 
 <script lang="ts">
@@ -29,7 +31,7 @@ export default defineComponent({
   props: {
     isToastOpen: {
       type: Boolean,
-      default: true,
+      default: false,
     },
     toastDuration: {
       type: Number,

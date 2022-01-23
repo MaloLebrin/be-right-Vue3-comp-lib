@@ -6,8 +6,8 @@
     :class="[
       colorClasses,
       sizeClasses,
+      { 'flex items-center space-x-4': $slots.icon },
       {'flex items-center cursor-wait': isLoading},
-      { 'inline-flex flex-row items-center space-x-4': $slots.icon },
       {'opacity-70': disabled },
       { 'cursor-pointer': !disabled }
     ]"
@@ -17,7 +17,7 @@
   >
   <div
     v-if="$slots.icon"
-    class="w-6 h-6"
+    class="w-6 h-6 mr-2"
   >
     <slot name="icon" />
   </div>

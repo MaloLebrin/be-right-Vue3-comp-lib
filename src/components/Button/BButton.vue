@@ -7,7 +7,7 @@
       colorClasses,
       sizeClasses,
       {'flex items-center cursor-wait': isLoading},
-      { 'inline-flex flex-row items-center space-x-8': $slots.icon },
+      { 'inline-flex flex-row items-center space-x-4': $slots.icon },
       {'opacity-70': disabled },
       { 'cursor-pointer': !disabled }
     ]"

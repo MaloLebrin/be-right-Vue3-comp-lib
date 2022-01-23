@@ -7,6 +7,7 @@
       colorClasses,
       sizeClasses,
       {'flex items-center cursor-wait': isLoading},
+      { 'inline-flex flex-row items-center space-x-8': $slots.icon },
       {'opacity-70': disabled },
       { 'cursor-pointer': !disabled }
     ]"
@@ -14,6 +15,12 @@
     :disabled="disabled"
     :aria-disabled="disabled"
   >
+  <div
+    v-if="$slots.icon"
+    class="w-6 h-6"
+  >
+    <slot name="icon" />
+  </div>
     <slot />
     <template v-if="isLoading">
       <div :class="loaderClasses" />

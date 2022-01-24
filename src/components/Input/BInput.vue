@@ -1,5 +1,5 @@
 <template>
-  <div class="inline-flex relative">
+  <div class="relative inline-flex w-full">
     <input
       v-bind="$attrs"
       :disabled="disabled"

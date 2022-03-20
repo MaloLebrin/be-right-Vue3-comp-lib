@@ -1,6 +1,6 @@
 {
   "name": "be-right-vue3-lib",
-  "version": "0.1.41",
+  "version": "0.1.42",
   "description": "Vue 3 UI library based on TypeScript",
   "private": false,
   "author": {
@@ -33,7 +33,7 @@
     "decimal.js-light": "^2.5.1",
     "postcss": "^7.0.39",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16",
-    "vue": "^3.0.0",
+    "vue": "^3.2.16",
     "vue-click-outside": "^1.1.0"
   },
   "devDependencies": {
